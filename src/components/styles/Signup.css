@@ -1,0 +1,243 @@
+@media only screen and (min-width: 1061px) {
+  
+
+.form-container {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 10%;
+  
+  }
+.form-style{
+    max-width: 50%;
+  width:40%;
+    
+}
+
+.main-heading{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color:rgba(40, 150, 103, 200);
+    font-weight: 550;
+}
+
+.input-style{
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    padding-inline: 20px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+.name-heading{
+    color: rgba(40, 150, 103, 200);
+    padding-top: 15px;
+    font-size: 1.4rem;
+}
+.btnclass{
+  padding-top: 20px;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  
+}
+.button-style1{
+  width: 40%;
+ 
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(40, 150, 103, 200);
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.5s;
+  display: flex;
+  
+  
+}
+
+.btn-text{
+  align-items: center;
+  margin: auto;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+}
+.button-style2{
+  width: 40%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(40, 150, 103, 200);
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  display: flex;
+}
+
+.button-style1:hover {
+  background-color: rgba(24, 89, 61);
+}
+
+.button-style1:hover  .btn-text{
+  color:white;
+}
+.button-style2:hover {
+  background-color: rgba(24, 89, 61);
+
+}
+
+.button-style2:hover  .btn-text{
+  color:white;
+}
+.account-question{
+  color:rgba(40,150,103,255);
+  font-size: 1.2rem;
+  word-wrap: break-word;
+  margin-top: 20px;
+  
+  
+}
+.account-question:hover{
+  color:rgba(24, 89, 61);
+  font-size: 1.2rem;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+.password-prompt{
+  color:rgba(40,150,103,255);
+  font-size: 0.8rem;
+  margin-top: 10px;
+  
+}
+}
+
+
+@media only screen and (max-width: 1060px) {
+  .form-container {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 10%;
+ 
+  
+}
+.form-style{
+    max-width: 90%;
+    width:70%;
+    
+}
+
+.main-heading{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color:rgba(40, 150, 103, 200);
+    font-weight: 550;
+    
+}
+
+.input-style{
+    width: 70vw;
+    max-width: 80vw;
+    background-color: white;
+    border-radius: 20px;
+    padding-inline: 20px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+.name-heading{
+    color: rgba(40, 150, 103, 200);
+    padding-top: 15px;
+    font-size: 1.2rem;
+}
+.btnclass{
+  padding-top: 20px;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  
+}
+.button-style1{
+  width: 40%;
+ 
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(40, 150, 103, 200);
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.5s;
+  display: flex;
+  
+  
+}
+
+.btn-text{
+  align-items: center;
+  margin: auto;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+.button-style2{
+  width: 40%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(40, 150, 103, 200);
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.5s;
+  display: flex;
+  
+}
+
+.button-style1:hover {
+  background-color: rgba(24, 89, 61);
+}
+
+.button-style1:hover  .btn-text{
+  color:white;
+}
+.button-style2:hover {
+  background-color: rgba(24, 89, 61);
+}
+
+.button-style2:hover  .btn-text{
+  color:white;
+}
+.account-question{
+  color:rgba(40,150,103,255);
+  font-size: 1.2rem;
+  word-wrap: break-word;
+  margin-top: 20px;
+  
+  
+}
+.account-question:hover{
+  color:rgba(24, 89, 61);
+  font-size: 1.2rem;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+.password-prompt{
+  color:rgba(40,150,103,255);
+  font-size: 0.6rem;
+
+} 
+}

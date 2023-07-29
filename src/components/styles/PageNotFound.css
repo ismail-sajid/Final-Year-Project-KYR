@@ -1,0 +1,22 @@
+.page-not-found-container{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding-bottom: 300px;
+  background-color: black;
+}
+
+
+.error-text-container{
+    width: 50%;
+    max-width: 60% !important; 
+    align-items: center;
+    display: flex;
+  flex-direction: column;
+
+}
+.main-heading-error{
+    font-size: 4rem;
+    color: rgba(40, 150, 103, 255);
+}

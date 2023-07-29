@@ -1,0 +1,233 @@
+@media only screen and (min-width:1061px){
+    .all-posts-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      
+    }
+    
+    .all-posts {
+      width: 50%;
+      max-width: 60%;
+      margin-bottom: 20px;
+      padding: 10px;
+      font-size: 1.2rem;
+      border-radius: 10px;
+      background-color: rgba(40, 150, 103, 255);
+      resize: none;
+      min-height: 40px;
+       
+      outline-style: solid;
+      border: 2px solid;
+      outline-color: rgba(40, 150, 103, 255);
+    
+      
+    }
+    .case-card-posts{
+      background-color: white;
+    max-width: 100%;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+    border-radius: 10px;
+    transition: background-color 0.5s ease-in-out;
+    cursor: pointer;
+    height: fit-content;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: break-word;
+    }
+    .case-card-posts h3{
+      color: rgba(40, 150, 103, 255);
+    }
+    .all-posts-heading {
+        color: white;
+        font-size: x-large;
+        margin-bottom: 25px;
+        text-decoration: underline;
+      }
+      .post-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .post-buttons{
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        
+      }
+      .allpost-button{
+        background-color: rgb(240, 239, 239);
+        color:rgba(40, 150, 103, 255);
+        width: 100%;
+        border:0.5px solid;
+        border-color: rgba(40, 150, 103, 255);
+        
+        margin: auto;
+        padding: 10px;
+
+      }
+      .green-button{
+        background-color: rgba(40, 150, 103, 255);
+        color: rgb(240, 239, 239);
+        width: 100%;
+        border:0.5px solid;
+        border-color: rgba(40, 150, 103, 255);
+        
+        margin: auto;
+        padding: 10px;
+
+      }
+      .allpost-button:hover{
+        background-color: rgba(40, 150, 103, 255);
+        
+        color: white;
+        transition: 0.5s;
+      }
+      .read-more-btn-allposts{
+        background-color: white;
+        color: rgba(40, 150, 103, 255);
+        border: none;
+        
+        
+      }
+      .read-more-btn-allposts:hover{
+        color:white;
+        background-color: rgba(40,150,103,255);
+        border: none;
+        
+      }
+      
+      
+}
+@media only screen and (max-width:1061px){
+  .all-posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    
+  }
+  
+  .all-posts {
+    width: 90vw;
+    max-width: 100vw;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    
+
+    background-color: rgba(40, 150, 103, 255);
+      resize: none;
+      min-height: 40px;
+       
+      outline-style: solid;
+      border: 2px solid;
+      outline-color: rgba(40, 150, 103, 255);
+  
+    
+  }
+  .case-card-posts{
+    background-color: white;
+  max-width: 100%;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: black;
+  border-radius: 10px;
+  transition: background-color 0.5s ease-in-out;
+  cursor: pointer;
+  height: fit-content;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-wrap: break-word;
+  font-size: 1rem;
+  }
+  .case-card-posts h3{
+    color: rgba(40, 150, 103, 255);
+  }
+  .all-posts-heading {
+    color: white;
+    font-size: x-large;
+    margin-bottom: 25px;
+    text-decoration: underline;
+  }
+   .post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .post-buttons{
+    display: flex;
+    flex-direction: row;
+    
+
+  }
+  .allpost-button{
+    background-color: rgb(240, 239, 239);
+    color:rgba(40, 150, 103, 255);
+    border: none;
+    margin: auto;
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+  .green-button{
+    background-color: rgba(40, 150, 103, 255);
+    color: rgb(240, 239, 239);
+    border: none;
+    margin: auto;
+    padding: 10px;
+  }
+  .allpost-button:hover{
+    background-color: rgba(40, 150, 103, 255);
+    color: white;
+    transition: 0.5s;
+  }
+  .case-card-posts .read-more-btn-allposts{
+    
+    border: none;
+    transition: background-color 0.5s ease-in-out;
+    
+  }
+  .case-card-posts:hover .read-more-btn-allposts{
+  
+    color: rgba(40,150,103,255);
+    border: none;
+    transition: background-color 0.5s ease-in-out;
+  }
+  .comment-box{
+    width: 100%;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: rgba(40, 150, 103, 255);
+    margin-top: 15px;
+  }
+  
+  .read-more-btn-allposts{
+    background-color: white;
+    color: rgba(40, 150, 103, 255);
+    border: none;
+    transition: background-color 0.5s ease-in-out;
+    
+  }
+  .read-more-btn-allposts:hover{
+    font-size: x-large;
+  
+    border: none;
+    transition: background-color 0.5s ease-in-out;
+  }
+}

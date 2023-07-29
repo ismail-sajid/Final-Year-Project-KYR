@@ -1,0 +1,13 @@
+
+.bodybg{
+    background-color:rgb(219, 219, 219);
+}
+*{
+    font-family: Helvetica;
+}
+::selection {
+    background-color: rgba(33, 131, 89, 0.3);
+    color: white;
+    
+   
+  }

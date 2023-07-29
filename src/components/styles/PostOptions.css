@@ -1,0 +1,219 @@
+@media only screen and (min-width:1061px){
+.post-options-container{
+    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+
+}
+.post-options-form-area{
+    width: 50%;
+  max-width: 60%;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  
+  outline-style: solid;
+  border: 2px solid;
+  outline-color: rgba(40, 150, 103, 255);
+
+ 
+}
+.form-style-postoption{
+    display: grid;
+    grid-template-areas:
+    "postlabel postinput"
+    "postlabel2 postinput2"
+    "button button2";
+    grid-template-columns: 30% 65%;
+    grid-template-rows: 40px 40px 20px;
+    column-gap: 1vw;
+    row-gap: 5vh;
+    height: fit-content;
+    width: 100%;
+    min-width: 30vw;
+    align-items: center;
+    margin: auto;
+    padding: 15px;
+    
+    
+}
+.post-label{
+    grid-area: postlabel;
+    font-weight: 600;
+    color: rgba(40,150,103,255);
+    font-size: 1.2rem;
+    
+    padding: 15px;
+
+}
+.post-label2{
+    grid-area: postlabel2;
+    font-weight: 600;
+    color: rgba(40,150,103,255);
+    font-size: 1.2rem;
+    right: 0;
+    padding: 15px;
+
+}
+
+.post-input{
+    grid-area: postinput;
+    border: none;
+    background-color: white;
+    border: 2px solid rgba(40, 150, 103, 255);
+    word-wrap: break-word;
+    padding: 15px;
+
+}
+.post-input2{
+    grid-area: postinput2;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    
+    border: none;
+    background-color: white;
+    padding: 15px;
+}
+.post-input2 div{
+    margin: auto;
+    
+}
+.post-btn{
+    grid-area: button;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgb(59, 204, 141);
+    margin: auto;
+    width: 70%;
+    max-width: 70%;
+    min-width: fit-content;
+    padding: 10px;
+    color: white;
+
+}
+.post-btn2{
+    grid-area: button2;
+    border-radius: 10px;
+    min-width: fit-content;
+    background-color: rgba(40,150,103,255);
+    margin: auto;
+    border: 0px;
+    height: fit-content;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    color: white;
+}
+}
+@media only screen and (max-width:1061px){
+    .post-options-container{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      
+      }
+      .post-options-form-area{
+          width: 90vw;
+        max-width: 100vw;
+        background-color: white;
+        border-radius: 15px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        
+        outline-style: solid;
+        border: 5px solid;
+        outline-color: rgba(40, 150, 103, 255);
+      
+       
+      }
+      .form-style-postoption{
+          display: grid;
+          grid-template-areas:
+          "postlabel postinput"
+          "postlabel2 postinput2"
+          "button button2";
+          grid-template-columns: 30% 65%;
+          grid-template-rows: 40px 40px 20px;
+          column-gap: 1vw;
+          row-gap: 2vh;
+          height: fit-content;
+          width: 100%;
+          min-width: 30vw;
+          align-items: center;
+          margin: auto;
+          padding: 15px;
+          
+          
+      }
+      .post-label{
+          grid-area: postlabel;
+          font-weight: 600;
+          color: rgba(40,150,103,255);
+          font-size: 1.2rem;
+          
+          padding: 15px;
+      
+      }
+      .post-label2{
+          grid-area: postlabel2;
+          font-weight: 600;
+          color: rgba(40,150,103,255);
+          font-size: 1.2rem;
+          right: 0;
+          padding: 15px;
+      
+      }
+      
+      .post-input{
+          grid-area: postinput;
+          border: none;
+          background-color: white;
+          
+          word-wrap: break-word;
+          padding: 15px;
+      
+      }
+      .post-input2{
+          grid-area: postinput2;
+          border: none;
+          background-color: white;
+          padding: 15px;
+      }
+      .post-btn{
+          grid-area: button;
+          
+          background-color: rgba(40,150,103,255);
+          margin: auto;
+          width: 100%;
+          max-width: 100%;
+          min-width: fit-content;
+          padding: 10px;
+          color: white;
+      
+      }
+      .post-btn2{
+          grid-area: button2;
+          border-radius: 10px;
+          min-width: fit-content;
+          background-color: rgba(40,150,103,255);
+          margin: auto;
+          
+          height: fit-content;
+          width: 100%;
+          max-width: 100%;
+          padding: 10px;
+          color: white;
+      }
+
+}

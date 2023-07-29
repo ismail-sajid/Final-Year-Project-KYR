@@ -1,0 +1,86 @@
+@media only screen and (min-width:1061px){
+.edit-profile-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+.form-style-editprofile{
+
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 20px;
+  align-items: center;
+  width: 40vw;
+  outline-style: solid;
+  border: 5px solid;
+  outline-color: rgba(40, 150, 103, 255);
+}
+.form-style-editprofile h4{
+    color: black;
+}
+.input-style-editprofile{
+    background-color: white;
+    margin: 5px;
+    border-radius: 15px;
+    padding: 10px;
+    width: 20vw;
+
+}
+.btn-edit-profile{
+    margin: auto;
+    background-color: rgba(40, 150, 103, 255);
+    border-radius: 20px;
+    margin: 5px;
+    color: white;
+    border: none;
+    padding: 8px;
+    
+}
+}
+@media only screen and (max-width:1061px){
+    .edit-profile-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+    }
+    .form-style-editprofile{
+    
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      border-radius: 20px;
+      padding: 20px;
+      align-items: center;
+      width: 90vw;
+      outline-style: solid;
+      border: 5px solid;
+      outline-color: rgba(40, 150, 103, 255);
+    }
+    .form-style-editprofile h4{
+        color: black;
+    }
+    .input-style-editprofile{
+        background-color: white;
+        margin: 5px;
+        border-radius: 15px;
+        padding: 10px;
+        width: 20vw;
+    
+    }
+    .btn-edit-profile{
+        margin: auto;
+        background-color: rgba(40, 150, 103, 255);
+        border-radius: 20px;
+        margin: 5px;
+        color: white;
+        border: none;
+        padding: 8px;
+
+        
+    }
+
+}

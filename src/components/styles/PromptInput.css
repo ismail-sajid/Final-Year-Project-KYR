@@ -1,0 +1,170 @@
+@media only screen and (min-width:1061px){
+.prompt-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  
+}
+
+.prompt-input {
+  width: 50%;
+  max-width: 60%;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  
+  resize: none;
+  min-height: 40px;
+   
+  outline-style: solid;
+  border: 2px solid;
+  outline-color: rgba(40, 150, 103, 255);
+  
+  
+}
+
+.prompt-input::placeholder {
+  color: #aaa;
+}
+.prompt-input::-webkit-scrollbar{
+  visibility: hidden;
+}
+.btns{
+  width: 50%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  
+  
+}
+.prompt-btn1 {
+  width: 40%;
+ 
+  height: 40px;
+  max-height: fit-content;
+  border-radius: 20px;
+  border: none;
+  background-color:rgb(50, 107, 144);
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.5s;
+
+}
+
+.prompt-btn2 {
+  
+  width: 40%;
+  height: 40px;
+  max-height: fit-content;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(40, 150, 103, 200);
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.5s;
+
+}
+
+.prompt-btn1:hover {
+  transition: 0.5s;
+  background-color: rgba(24, 89, 61);
+}
+
+.prompt-btn2:hover {
+  transition: 0.5s;
+  background-color: rgba(24, 89, 61);
+}
+}
+@media only screen and (max-width: 1060px){
+  .prompt-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    
+  }
+  .prompt-input::-webkit-scrollbar{
+    visibility: hidden;
+  }
+  
+  .prompt-input {
+    width: 80%;
+    max-width: 90%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+    min-height: 40px;
+    outline: none;
+    
+  }
+  
+  .prompt-input::placeholder {
+    color: #aaa;
+  }
+  .btns{
+    width: 80%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    
+    
+  }
+  .prompt-btn1 {
+    width: 40%;
+    max-height: fit-content;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(50, 107, 144);
+    color: #fff;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: 0.5s;
+  
+  }
+  
+  .prompt-btn2 {
+    max-height: fit-content;
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(40, 150, 103, 200);
+    color: #fff;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: 0.5s;
+  
+  }
+  
+  .prompt-btn1:hover {
+    transition: 0.5s;
+    background-color: rgba(24, 89, 61);
+  }
+  
+  .prompt-btn2:hover {
+    transition: 0.5s;
+    background-color: rgba(24, 89, 61);
+  }
+}
+
+.login-msg{
+  color:white;
+  margin-top: 30px;
+  font-weight: bolder;
+  background-color: red;
+  font-size: large;
+  border-radius: 15px;
+  padding:8px;
+
+}
+.login-msg:hover{
+  font-size: larger;
+}

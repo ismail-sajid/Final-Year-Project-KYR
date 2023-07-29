@@ -1,0 +1,117 @@
+@media only screen and (min-width:1061px){
+.profile-container{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding-bottom: 300px;
+ 
+}
+
+
+.profile-item-container{
+    width: 50%;
+    max-width: 60% !important; 
+    
+    display: flex;
+  flex-direction: column;
+
+}
+
+.heading-and-button{
+    display: grid;
+    grid-template-areas: 
+      "heading heading button";
+    grid-template-rows: 100%;
+    grid-template-columns: 33% 33% 30%;
+    column-gap: 10px;
+    align-items:center;
+    
+}
+
+.profile-heading{
+    grid-area: heading;
+    font-size: 4rem;
+    text-align:left;
+    color: rgba(40,150,103,255);
+    word-wrap: break-word;
+    
+}
+.posts-heading{
+  
+  font-size: 2rem;
+  text-align:left;
+  color: white;
+  
+}
+.posts-display{
+  margin-top:10%;
+}
+.heading-and-button button{
+    height:50px;
+    background-color:rgba(40, 150, 103, 255);
+    color:white;
+    border-radius:15px;
+    border: none;
+    
+}
+}
+@media only screen and (max-width:1061px){
+  .profile-container{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  
+  
+}
+
+
+.profile-item-container{
+    width: 90vw;
+    max-width: 100vw; 
+    
+    display: flex;
+  flex-direction: column;
+
+}
+
+.heading-and-button{
+    display: grid;
+    grid-template-areas: 
+      "heading heading button";
+    grid-template-rows: 100%;
+    grid-template-columns: 33% 33% 30%;
+    column-gap: 10px;
+    align-items:center;
+    
+}
+
+.profile-heading{
+    grid-area: heading;
+    font-size: 4rem;
+    text-align:left;
+    color: rgba(40,150,103,255);
+    word-wrap: break-word;
+    
+}
+.posts-heading{
+  
+  font-size: 2rem;
+  text-align:left;
+  color: white;
+  
+}
+.posts-display{
+  margin-top:10%;
+}
+.heading-and-button button{
+    height:50px;
+    background-color:rgba(40, 150, 103, 255);
+    color:white;
+    border-radius:15px;
+    border: none;
+    
+}
+
+}

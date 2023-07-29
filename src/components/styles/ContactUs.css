@@ -1,0 +1,338 @@
+@media only screen and (min-width:1061px){
+  .contact-us-container{
+      display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 50px;
+
+  }
+  
+  .thank-you-msg{
+    grid-area: msg;
+    color:white;
+  }
+  .main-heading-cu{
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: rgba(40, 150, 103, 200);
+  }
+  .contact-us-container p{
+      
+      font-size: 1.2rem;
+  }
+  .grid-container-contact-us{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "input1 input2 input3"
+    "input4 input4 input4"
+    "msg blank button";
+
+    grid-template-rows: 100px 40px 100px 60px;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 50%;
+    max-width: 60%;
+    height: fit-content;
+    max-height: fit-content;
+    background-color: rgba(40, 150, 103, 200);
+    border-radius: 10px;
+    padding: 15px;
+    justify-content: center;
+    
+    
+  }
+
+  .main-heading-grid{
+    grid-area: header;
+    align-items: center;
+    text-align: center;
+  }
+  .main-heading-grid p , h3{
+      color: white;
+  }
+  .input-style1{
+    grid-area: input1;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding: 2px;
+    display: flex;
+    
+  }
+  
+  
+  .input-style2{
+    grid-area: input2;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding: 2px;
+    display: flex;
+  }
+  .input-style-placeholder{
+      border: none;
+      outline: none;
+      width: auto;
+      max-width: 80%;
+      
+      height: auto;
+  }
+  
+  
+  
+  .input-style3{
+    grid-area: input3;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding: 2px;
+    display: flex;
+  }
+  
+  .text-style4{
+    grid-area: input4;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+    min-height: 40px;
+    width: 100%;
+    outline: none;
+  }
+  .text-style4::placeholder{
+    outline: none;
+    border: none;
+    
+  }
+  .text-style4::-webkit-scrollbar {
+    height: 2px;
+  }
+  
+  .text-style4::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    border-radius: 10px;
+  }
+  
+  .text-style4::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+  }
+  .button-cu{
+      grid-area: button;
+      border-radius: 10px;
+      color: white;
+      height: 30px;
+      width: 200px;
+      margin-left: 20px;
+      background-color: rgba(24, 89, 61);
+      border: none;
+      outline: none;
+      font-weight: lighter;
+  
+  }
+  .button-cu:hover{
+      background-color: rgba(40, 150, 103, 200);
+  }
+  .logos-cu{
+      display: flex;
+      padding: auto;
+      justify-content: space-between;
+      
+
+  }
+  .contact-us-icon{
+      justify-content: space-between;
+      height: 50px;
+      width: 50px;
+      margin: 20px;
+      margin-bottom: 50px;
+  }
+  .text-style-placeholder{
+      align-items: middle;
+  }
+  .icon-cu{
+    color: rgba(40, 150, 103, 200);
+    padding: 2px;
+    margin: 2px;
+  }
+ 
+  }
+  @media only screen and (max-width:1062px){
+    .contact-us-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      width: 100vw;
+
+
+  }
+  .main-heading-cu{
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: rgba(40, 150, 103, 200);
+  }
+  .contact-us-container p{
+      color: black;
+      font-size: 1.2rem;
+  }
+  .grid-container-contact-us{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "input1 input2 input3"
+    "input4 input4 input4"
+    "blank blank button";
+
+    grid-template-rows: 100px 40px 100px 60px;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 90vw;
+    max-width: 100vw;
+    height: fit-content;
+    max-height: fit-content;
+    background-color: rgba(40, 150, 103, 200);
+    border-radius: 10px;
+    padding: 15px;
+    justify-content: center;
+  }
+
+  .main-heading-grid{
+    grid-area: header;
+    align-items: center;
+    text-align: center;
+  }
+  .main-heading-grid p , h3{
+      color: white;
+  }
+  .input-style1{
+    grid-area: input1;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding: 2px;
+    display: flex;
+    font-size: small;
+    
+  }
+  
+  
+  .input-style2{
+    grid-area: input2;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding: 2px;
+    display: flex;
+    
+    font-size: small;
+  }
+  .thank-you-msg{
+    color:white;
+  }
+  .input-style-placeholder{
+      border: none;
+      outline: none;
+      width: auto;
+      max-width: 70%;
+      
+    font-size: xx-small;
+      
+      height: auto;
+  }
+  
+  
+  
+  .input-style3{
+    grid-area: input3;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding: 2px;
+    width: auto;
+    display: flex;
+    
+    font-size: small;
+  }
+  
+  .text-style4{
+    grid-area: input4;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+    min-height: 40px;
+    width: 100%;
+    outline: none;
+  }
+  .text-style4::placeholder{
+    outline: none;
+    border: none;
+    
+  }
+  .text-style4::-webkit-scrollbar {
+    height: 2px;
+  }
+  
+  .text-style4::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    border-radius: 10px;
+  }
+  
+  .text-style4::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+  }
+  .button-cu{
+      grid-area: button;
+      border-radius: 10px;
+      color: white;
+      height: 30px;
+      width: fit-content;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      background-color: rgba(24, 89, 61);
+      border: none;
+      outline: none;
+      font-weight: lighter;
+  
+  }
+  .button-cu:hover{
+      background-color: rgba(40, 150, 103, 200);
+  }
+  .logos-cu{
+      display: flex;
+      padding: auto;
+      justify-content: space-between;
+      
+
+  }
+  .contact-us-icon{
+      justify-content: space-between;
+      height: 50px;
+      width: 50px;
+      margin: 20px;
+      margin-bottom: 20px;
+  }
+  .text-style-placeholder{
+      align-items: middle;
+  }
+  .icon-cu{
+    color: rgba(40, 150, 103, 200);
+    padding: 2px;
+    margin: 2px;
+  }
+  }

@@ -1,0 +1,122 @@
+@media only screen and (min-width:1061px){
+.how-does-it-container {
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+ 
+  background-color: rgb(219 219 219);
+  
+}
+
+.how-does-it-text-container{
+    width: 50%;
+    max-width: 60% !important; 
+    align-items: center;
+    display: flex;
+  flex-direction: column;
+    
+}
+
+.how-does-it-text{
+    color: black;
+    font-weight:100;
+    
+    padding-top: 20px;
+    font-size: 1.2rem;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.details-question{
+    color:rgba(40, 150, 103, 255);
+    cursor:pointer;
+    font-size: 0.2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.how-does-it-work-video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.details-question{
+    color:rgba(40, 150, 103, 255);
+    cursor:pointer;
+    font-size: large;
+    align-items: center;
+    text-align: center;
+}
+.details-question h3{
+    color: black;
+}
+
+.how-does-it-work-video-player {
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+}
+@media only screen and (max-width:1060px){
+    .how-does-it-container {
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+     
+      background-color: rgb(219 219 219);
+      
+    }
+    
+    .how-does-it-text-container{
+        width: 80%;
+        max-width: 90%; 
+        align-items: center;
+        display: flex;
+      flex-direction: column;
+        
+    }
+    
+    .how-does-it-text{
+        color: black;
+        font-weight:100;
+        opacity: 100%;
+        padding-top: 20px;
+        font-size: 0.8rem;
+        
+        padding-bottom: 20px;
+    }
+    
+    .details-question{
+        color:rgba(40, 150, 103, 255);
+        cursor:pointer;
+        font-size: 1rem;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .how-does-it-work-video{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 90vw;
+        width: 80vw;
+        margin: auto;
+    }
+    
+    .how-does-it-work-video-player {
+        margin-top: 20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        margin-bottom: 20px;
+        width: 80vw;
+
+    }   
+}
