@@ -36,7 +36,7 @@ function AllPosts() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:5000/all-posts");
+        const response = await fetch("/all-posts");
         const data = await response.json();
         setPosts(data.All_Posts);
         
@@ -66,7 +66,7 @@ function AllPosts() {
 
         try {
           const response = await fetch(
-            "http://127.0.0.1:5000/check-likes",
+            "/check-likes",
             requestOptions
           );
           const data = await response.json();
@@ -96,7 +96,7 @@ function AllPosts() {
           email: email,
         }),
       };
-      fetch("http://127.0.0.1:5000/post-liked", requestOptions)
+      fetch("/post-liked", requestOptions)
         .then((response) => response.json())
         .then((data) => {
           const updatedLikedPosts = [...LikedPosts, postId];
@@ -121,7 +121,7 @@ function AllPosts() {
           email: email,
         }),
       };
-      fetch("http://127.0.0.1:5000/post-disliked", requestOptions)
+      fetch("/post-disliked", requestOptions)
         .then((response) => response.json())
         .then((data) => {
           const updatedLikedPosts = LikedPosts.filter((id) => id !== postId);
@@ -181,7 +181,7 @@ function AllPosts() {
         body: JSON.stringify({ comment: CommentBox, postId: postId, email: email }),
       };
 
-      fetch("http://127.0.0.1:5000/comment-on-post", requestOptions)
+      fetch("/comment-on-post", requestOptions)
         .then((response) => response.json())
         .then((data) => {
             data.comment_count
@@ -204,7 +204,7 @@ function AllPosts() {
           body: JSON.stringify({postId: postId}),
         };
   
-        fetch("http://127.0.0.1:5000/fetch-comment-posts", requestOptions)
+        fetch("/fetch-comment-posts", requestOptions)
           .then((response) => response.json())
           .then((data) => {
                 setComments(data.post_comments);
@@ -239,7 +239,7 @@ function AllPosts() {
 
         try {
           const response = await fetch(
-            "http://127.0.0.1:5000/can-delete",
+            "/can-delete",
             requestOptions
           );
           const data = await response.json();
@@ -265,7 +265,7 @@ function AllPosts() {
         body: JSON.stringify({commentID: commentID}),
       };
 
-      fetch("http://127.0.0.1:5000/delete-comment", requestOptions)
+      fetch("/delete-comment", requestOptions)
         .then((response) => response.json())
         .then((data) => {
             const count =data.value;

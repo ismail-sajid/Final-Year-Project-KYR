@@ -21,7 +21,7 @@ const EditProfile = ({ handleCancelEdit }: Props) => {
               password:password}),
             };
           
-         fetch("http://127.0.0.1:5000/change-password", requestOptions)
+         fetch("/change-password", requestOptions)
          .then((response) => response.json())
           .then((data) => {
          

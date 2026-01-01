@@ -103,7 +103,8 @@ def csv_open(file_name):
         with open(file_name, "r") as csv_file:
             csv_reader = csv.reader(csv_file)
             next(csv_reader)  # Skip header row
-            data = [row for row in csv_reader]
+            # Filter out empty rows and rows with less than 2 columns
+            data = [row for row in csv_reader if len(row) >= 2 and row[0].strip() and row[1].strip()]
             return data
     except FileNotFoundError:
         raise FileNotFoundError(f"File '{file_name}' not found.")

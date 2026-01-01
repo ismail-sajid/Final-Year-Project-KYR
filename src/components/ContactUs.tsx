@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import HighlightedCases from "./HighlightedCases";
 import BlackBg from "./BlackBg";
 import { useState } from "react";
+import { API_ENDPOINTS } from "../config/api";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -69,8 +70,8 @@ const ContactUs = () => {
   
 
 
-    fetch("http://127.0.0.1:5000/contact-form", requestOptions)
-    .then((response) => response.json())
+    fetch(API_ENDPOINTS.CONTACT_FORM, requestOptions)
+      .then((response) => response.json())
       .then((data) => {
         setSubmittedMessage(true)
       })

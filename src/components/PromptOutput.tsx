@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./styles/PromptOutput.css";
+import { API_ENDPOINTS } from "../config/api";
 
 type HandleShowPromptOutput = () => void;
 type Lawyer = [number, string, string, string, any, string, number];
@@ -74,7 +75,7 @@ const PromptOutput: React.FC<Props> = ({ applicableLaws, applicableTopic }) => {
       body: JSON.stringify({ applicabletopic: applicableTopic }),
     };
 
-    fetch("http://127.0.0.1:5000/lawyers", requestOptions)
+    fetch(API_ENDPOINTS.LAWYERS, requestOptions)
       .then((response) => response.json())
       .then((data) => {
         setLawyers(data.applicablelawyers);
