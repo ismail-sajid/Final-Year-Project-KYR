@@ -6,6 +6,7 @@ import {
   faTrash
   
 } from "@fortawesome/free-solid-svg-icons";
+import { API_ENDPOINTS } from "../config/api";
 
 type TopPost = [number, number, string, string, string, number, any,string, string,number];
 type Comment = [number, number, number, string, string]
@@ -31,7 +32,7 @@ function HighlightedCases() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:5000/highlighted");
+        const response = await fetch(API_ENDPOINTS.HIGHLIGHTED_POSTS);
         const data = await response.json();
         setTopPosts(data.Top_Posts);
       } catch (error) {
@@ -68,7 +69,7 @@ function HighlightedCases() {
 
         try {
           const response = await fetch(
-            "http://127.0.0.1:5000/check-likes",
+            API_ENDPOINTS.CHECK_LIKES,
             requestOptions
           );
           const data = await response.json();
@@ -98,7 +99,7 @@ function HighlightedCases() {
           email: email,
         }),
       };
-      fetch("http://127.0.0.1:5000/post-liked", requestOptions)
+      fetch(API_ENDPOINTS.POST_LIKED, requestOptions)
         .then((response) => response.json())
         .then((data) => {
           const updatedLikedPosts = [...LikedPosts, postId];
@@ -123,7 +124,7 @@ function HighlightedCases() {
           email: email,
         }),
       };
-      fetch("http://127.0.0.1:5000/post-disliked", requestOptions)
+      fetch(API_ENDPOINTS.POST_DISLIKED, requestOptions)
         .then((response) => response.json())
         .then((data) => {
           const updatedLikedPosts = LikedPosts.filter((id) => id !== postId);
@@ -183,7 +184,7 @@ function HighlightedCases() {
         body: JSON.stringify({ comment: CommentBox, postId: postId, email: email }),
       };
 
-      fetch("http://127.0.0.1:5000/comment-on-post", requestOptions)
+      fetch(API_ENDPOINTS.COMMENT_ON_POST, requestOptions)
         .then((response) => response.json())
         .then((data) => {
             data.comment_count
@@ -206,7 +207,7 @@ function HighlightedCases() {
           body: JSON.stringify({postId: postId}),
         };
   
-        fetch("http://127.0.0.1:5000/fetch-comment-posts", requestOptions)
+        fetch(API_ENDPOINTS.FETCH_COMMENT_POSTS, requestOptions)
           .then((response) => response.json())
           .then((data) => {
                 setComments(data.post_comments);
@@ -241,7 +242,7 @@ function HighlightedCases() {
 
         try {
           const response = await fetch(
-            "http://127.0.0.1:5000/can-delete",
+            API_ENDPOINTS.CAN_DELETE,
             requestOptions
           );
           const data = await response.json();
@@ -267,7 +268,7 @@ function HighlightedCases() {
         body: JSON.stringify({commentID: commentID}),
       };
 
-      fetch("http://127.0.0.1:5000/delete-comment", requestOptions)
+      fetch(API_ENDPOINTS.DELETE_COMMENT, requestOptions)
         .then((response) => response.json())
         .then((data) => {
             const count =data.value;

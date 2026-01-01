@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import HighlightedCases from "./HighlightedCases";
 import BlackBg from "./BlackBg";
 import Profile from "./Profile";
+import { API_ENDPOINTS } from "../config/api";
 
 const Login = () => {
   window.scrollTo(0, 0);
@@ -25,7 +26,7 @@ const Login = () => {
       }),
     };
 
-    fetch("http://127.0.0.1:5000/login", requestOptions)
+    fetch(API_ENDPOINTS.LOGIN, requestOptions)
       .then((response) => response.json())
       .then((data) => {
         // Handle the response data

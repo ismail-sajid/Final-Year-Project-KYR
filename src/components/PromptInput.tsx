@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./styles/PromptInput.css";
 import PostOptions from "./PostOptions";
 import PromptOutput from "./PromptOutput";
+import { API_ENDPOINTS } from "../config/api";
 
 
 type HandleShowPromptOutput = () => void;
@@ -17,7 +18,6 @@ interface Props {
 
 const PromptInput = ({ handleShowPromptOutput }: Props) => {
   const [inputValue, setInputValue] = useState("");
-  const [topicValue, setTopicValue] = useState("");
   const [buttonClicked, setButtonClicked] = useState(false);
   const [showPostOptions, setShowPostOptions] = useState(false);
   const isAuthenticated = localStorage.getItem("token");
@@ -40,16 +40,13 @@ const PromptInput = ({ handleShowPromptOutput }: Props) => {
       body: JSON.stringify({ prompt: inputValue }),
     };
 
-
-    fetch("http://127.0.0.1:5000/", requestOptions)
+    fetch(API_ENDPOINTS.PROCESS_PROMPT, requestOptions)
       .then((response) => response.json())
       .then((data) => {
         // Set the applicableLaws state with the received data
         setApplicableLaws(data.applicablelaws);
         setApplicableTopic(data.applicabletopic);
         
-
-
         // Call the desired function to show the prompt output
         setShowPromptOutput(true);
         handleShowPromptOutput();
@@ -71,25 +68,18 @@ const PromptInput = ({ handleShowPromptOutput }: Props) => {
         body: JSON.stringify({ prompt: inputValue }),
       };
   
-      fetch("http://127.0.0.1:5000/", requestOptions)
+      fetch(API_ENDPOINTS.PROCESS_PROMPT, requestOptions)
         .then((response) => response.json())
         .then((data) => {
           // Set the applicabletopic state with the received data
-           setStringApplicableTopic(data.applicabletopic)
-           setApplicableLaws(data.applicablelaws)
-      
-           
-          
-           
-           
-          // Call the desired function to show the prompt output
+          setStringApplicableTopic(data.applicabletopic);
+          setApplicableLaws(data.applicablelaws);
         })
         .catch((error) => {
           console.error("Error:", error);
         });
     
       setShowPostOptions(true);
-     
     } else {
       setButtonClicked(true);
     }

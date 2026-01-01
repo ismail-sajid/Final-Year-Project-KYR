@@ -13,7 +13,7 @@ function AllPosts() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:5000/all-posts");
+        const response = await fetch("/all-posts");
         const data = await response.json();
         setPosts(data.All_Posts);
       } catch (error) {
@@ -48,7 +48,7 @@ function AllPosts() {
       };
   
       try {
-        const response = await fetch("http://127.0.0.1:5000/post-liked", requestOptions);
+        const response = await fetch("/post-liked", requestOptions);
         const data = await response.json();
         setNoOfLikes((prevLikes) => ({
           ...prevLikes,
@@ -74,7 +74,7 @@ function AllPosts() {
       };
   
       try {
-      const response = await fetch("http://127.0.0.1:5000/post-disliked", requestOptions);
+      const response = await fetch("/post-disliked", requestOptions);
       const data = await response.json();
       setNoOfLikes((prevLikes) => ({
         ...prevLikes,
@@ -95,7 +95,7 @@ function AllPosts() {
           email: email,
         }),
       };
-      fetch("http://127.0.0.1:5000/check-likes", requestOptions)
+      fetch("/check-likes", requestOptions)
       .then((response) => response.json())
       .then((data) => {
         if (data.value === "true"){

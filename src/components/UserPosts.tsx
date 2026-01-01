@@ -50,7 +50,7 @@ function UserPosts() {
       body: JSON.stringify({ postId: postId }),
     };
 
-    fetch("http://127.0.0.1:5000/delete-post", requestOptions)
+    fetch("/delete-post", requestOptions)
       .then((response) => response.json())
       .then((data) => {
         window.location.href = "/profile";
@@ -70,7 +70,7 @@ function UserPosts() {
         };
 
         const response = await fetch(
-          "http://127.0.0.1:5000/user-posts",
+          "/user-posts",
           requestOptions
         );
         const data = await response.json();
@@ -100,7 +100,7 @@ function UserPosts() {
 
         try {
           const response = await fetch(
-            "http://127.0.0.1:5000/check-likes",
+            "/check-likes",
             requestOptions
           );
           const data = await response.json();
@@ -130,7 +130,7 @@ function UserPosts() {
           email: email,
         }),
       };
-      fetch("http://127.0.0.1:5000/post-liked", requestOptions)
+      fetch("/post-liked", requestOptions)
         .then((response) => response.json())
         .then((data) => {
           const updatedLikedPosts = [...LikedPosts, postId];
@@ -155,7 +155,7 @@ function UserPosts() {
           email: email,
         }),
       };
-      fetch("http://127.0.0.1:5000/post-disliked", requestOptions)
+      fetch("/post-disliked", requestOptions)
         .then((response) => response.json())
         .then((data) => {
           const updatedLikedPosts = LikedPosts.filter((id) => id !== postId);
@@ -215,7 +215,7 @@ function UserPosts() {
         body: JSON.stringify({ comment: CommentBox, postId: postId, email: email }),
       };
 
-      fetch("http://127.0.0.1:5000/comment-on-post", requestOptions)
+      fetch("/comment-on-post", requestOptions)
         .then((response) => response.json())
         .then((data) => {
             data.comment_count
@@ -238,7 +238,7 @@ function UserPosts() {
           body: JSON.stringify({postId: postId}),
         };
   
-        fetch("http://127.0.0.1:5000/fetch-comment-posts", requestOptions)
+        fetch("/fetch-comment-posts", requestOptions)
           .then((response) => response.json())
           .then((data) => {
                 setComments(data.post_comments);
@@ -273,7 +273,7 @@ function UserPosts() {
 
         try {
           const response = await fetch(
-            "http://127.0.0.1:5000/can-delete",
+            "/can-delete",
             requestOptions
           );
           const data = await response.json();
@@ -299,7 +299,7 @@ function UserPosts() {
         body: JSON.stringify({commentID: commentID}),
       };
 
-      fetch("http://127.0.0.1:5000/delete-comment", requestOptions)
+      fetch("/delete-comment", requestOptions)
         .then((response) => response.json())
         .then((data) => {
             const count =data.value;

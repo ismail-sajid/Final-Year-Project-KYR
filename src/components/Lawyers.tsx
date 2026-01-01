@@ -15,7 +15,7 @@ const Lawyers: React.FC<Props> = ({ applicabletopic }) => {
   };
 
  if(applicabletopic.length>4){
-  fetch("http://127.0.0.1:5000/lawyers", requestOptions)
+  fetch("/lawyers", requestOptions)
     .then((response) => response.json())
     .then((data) => {
       

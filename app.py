@@ -252,4 +252,4 @@ def delete_a_comment():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(port=5001, debug=True)

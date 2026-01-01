@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./styles/PostOptions.css";
 import { format } from "date-fns";
+import { API_ENDPOINTS } from "../config/api";
 
 
 
@@ -41,7 +42,7 @@ const PostOptions: React.FC<Props> = ({
       }),
     };
 
-    fetch("http://127.0.0.1:5000/post-about-this", requestOptions)
+    fetch(API_ENDPOINTS.POST_ABOUT_THIS, requestOptions)
       .then((response) => response.json())
       .then((data) => {
         console.log(data.message);

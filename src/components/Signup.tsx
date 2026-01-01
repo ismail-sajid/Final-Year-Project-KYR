@@ -6,6 +6,7 @@ import "./styles/Signup.css";
 import logo from "./logo.png";
 import { Route, Link } from "react-router-dom";
 import validator from "validator";
+import { API_ENDPOINTS } from "../config/api";
 
 
 const SignUp = () => {
@@ -70,7 +71,7 @@ const SignUp = () => {
       };
 
 
-      fetch("http://127.0.0.1:5000/signup", requestOptions)
+      fetch(API_ENDPOINTS.SIGNUP, requestOptions)
         .then((response) => response.json())
         .then((data) => {
           const checkValue = data.canSignup
